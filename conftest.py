@@ -18,9 +18,16 @@ def pytest_runtest_makereport(item, call):
 @pytest.fixture(scope="function")
 def web_browser(request):
 
-    browser = webdriver.Chrome('../chdrv.exe')
-    browser.set_window_size(1400, 1000)
-
+    # service = Service('../chdrv.exe')
+    # chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--no-sandbox")
+    # browser = webdriver.Chrome(service=service, options=chrome_options)
+    
+    browser = Service('../chdrv.exe')
+    browser = webdriver.Chrome(service=browser)
+    browser.maximize_window()
+    
     # Return browser instance to test case:
     yield browser
 
