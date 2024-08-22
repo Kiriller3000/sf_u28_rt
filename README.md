@@ -2,7 +2,7 @@
 
     Тестирование интерфеса авторизации, регистрации, восстановления пароля от 
     Ростелеком Информационные технологии.
-
+    Тест-кейсы https://docs.google.com/spreadsheets/d/1pWN4ZHJ0Ey_GrW3ss_FahKvt1BHswj-VnfyzFpdTSfE/edit?gid=0#gid=0
 # Настройка проекта:
     1. Создаем виртуальное окружение командой:
         python -m venv venv
