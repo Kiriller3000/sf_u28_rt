@@ -6,7 +6,7 @@
 Тест-кейсы 
 https://docs.google.com/spreadsheets/d/1pWN4ZHJ0Ey_GrW3ss_FahKvt1BHswj-VnfyzFpdTSfE/edit?gid=0#gid=0
     
-# Настройка проекта:
+# Настройка:
     1. Создаем виртуальное окружение командой:
         python -m venv venv
     2. Активируем виртуальное окружение командой (MacOS/Linux):
