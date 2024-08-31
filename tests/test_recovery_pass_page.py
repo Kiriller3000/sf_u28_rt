@@ -14,7 +14,7 @@ class TestRecoveryPass:
     """Класс позитивных тестов страницы восстановления пароля.
        Техника классов эквивалентности - парольная строка от 8 до 20 символов включительно."""
 
-    @pytest.mark.parametrize("login", ['+7 999 678 15 10', 'jetowej607@tipent.com', 'rtkid_1691659653400'],
+    @pytest.mark.parametrize("login", ['+7 999 678 14 20', 'jetowej607@tipent.com', 'rtkid_1691659653400'],
                              ids=['registered phone', 'registered email', 'registered login'])
     def test_recovery_pass_with_phone_email_login(self, web_browser, login):
         """Тест восстановления пароля по телефону, логину, почте. Нижняя граница допустимой длины поля пароль.
@@ -149,7 +149,7 @@ class TestRecoveryPassNegative:
 
 
 
-    @pytest.mark.parametrize("login", ['+9851167924', 'jetowej607@tipent.com', 'rtkid_1691659653400'], \
+    @pytest.mark.parametrize("login", ['+9851167834', 'jetowej607@tipent.com', 'rtkid_1691659653400'], \
                              ids=['registered phone', 'registered email', 'registered login'])
     @pytest.mark.parametrize("password", ['P@SSw0rd'], ids=['mismatched password'])
     def test_password_confirmation(self, web_browser, login, password):
